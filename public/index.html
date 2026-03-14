@@ -16,9 +16,9 @@
     
     <!-- 地图配置 (保留你的 Key) -->
     <script type="text/javascript">
-        window._AMapSecurityConfig = { securityJsCode: 'YOUR_AMAP_KEY_SECURITY_CODE' }
+        window._AMapSecurityConfig = { securityJsCode: '***REMOVED***' }
     </script>
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=YOUR_AMAP_KEY"></script> 
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=***REMOVED***"></script> 
 </head>
 <body>
 
@@ -74,6 +74,17 @@
         <!-- 1. 地图视图 -->
         <div id="view-map" class="view-section h-100">
             <div id="amap-container"></div>
+
+            <!-- [新增] 地图加载状态遮罩层 -->
+            <!-- 用于解决“页面像没渲染完”时用户没有明确反馈的问题 -->
+            <div id="map-loading-overlay" class="map-loading-overlay">
+                <div class="map-loading-card shadow">
+                    <div class="spinner-border text-primary mb-3" role="status"></div>
+                    <div class="fw-bold">地图资源加载中...</div>
+                    <div class="small text-muted mt-2">正在初始化地图与点位数据，请稍候</div>
+                </div>
+            </div>
+
             <!-- HUD -->
             <div class="map-hud shadow">
                 <div class="hud-item border-end">
