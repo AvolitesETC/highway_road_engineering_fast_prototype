@@ -1,0 +1,43 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+.cache/
+
+# env files
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# editor
+.vscode/
+
+# system
+.DS_Store
+Thumbs.db
+
+# archives / temp
+*.zip
+*.7z
+*.rar
+*.log
+
+# 图片文件（忽略所有格式的图片）
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.svg
+*.ico
+
+# 可选：仅忽略uploads目录下的所有文件（推荐，精准控制）
+# uploads/

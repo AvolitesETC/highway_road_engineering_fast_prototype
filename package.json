@@ -1,0 +1,27 @@
+{
+  "name": "highway-system-v2",
+  "version": "2.0.0",
+  "description": "基于Node.js+SQLite+高德地图的涉路工程管理系统",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init-db": "node scripts/init_db.js"
+  },
+  "keywords": [],
+  "author": "HighwayTech Co., Ltd",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "sharp": "^0.34.5",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@eslint/css": "^1.0.0",
+    "eslint": "^10.0.3",
+    "eslint-plugin-html": "^8.1.4",
+    "globals": "^17.4.0"
+  }
+}
